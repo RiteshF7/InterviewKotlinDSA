@@ -32,5 +32,14 @@ s consists only of printable ASCII characters.
 * */
 
 fun isPalindrome(s: String): Boolean {
-   return false
+
+    var inputString = s.filter { it.isLetterOrDigit() }.lowercase()
+    if (inputString.isEmpty()) return true
+
+    for (index in 0..inputString.length / 2) {
+        val current = inputString[index]
+        val last = inputString[(inputString.length - 1) - index]
+        if (current != last) return false
+    }
+    return true
 }
