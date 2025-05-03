@@ -24,9 +24,9 @@ s[i] is a printable ascii character.*/
 
 
 fun reverseString(s: CharArray) {
-    for (index in 0 until s.size / 2) { // Iterate only until half
+    for (index in 0 until s.size / 2) {
         val last = (s.size - 1) - index
-        swap(s, index, last) // Swap elements
+        swap(s, index, last)
     }
-    println(s.contentToString()) // Print reversed array
+    println(s.contentToString())
 }
