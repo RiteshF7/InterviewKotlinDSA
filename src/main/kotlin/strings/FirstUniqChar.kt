@@ -36,5 +36,20 @@ Constraints:
 s consists of only lowercase English letters.*/
 
 fun firstUniqChar(s: String): Int {
-    return 0;
+
+    val mMap = mutableMapOf<Char, Int>()
+
+    for (char in s) {
+        mMap[char] = mMap.getOrDefault(char, 0) + 1
+    }
+
+    for (index in s.indices){
+        if (mMap[s[index]] == 1) {
+            return index
+        }
+
+    }
+
+    return -1;
+
 }

@@ -11,5 +11,6 @@ class FirstUniqueCharacterTest {
         assertEquals(-1, firstUniqChar("aabb"))        // No unique character
         assertEquals(0, firstUniqChar("z"))            // Only one character, it's unique
         assertEquals(-1, firstUniqChar(""))            // Empty string should return -1
+        assertEquals(4, firstUniqChar("aabbcdd"))            // Empty string should return -1
     }
 }
