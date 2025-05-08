@@ -8,7 +8,7 @@ class LongestCommonPrefixTest {
     fun testLongestCommonPrefix() {
         assertEquals("fl", longestCommonPrefix(arrayOf("flower", "flow", "flight"))) // Common prefix "fl"
         assertEquals("", longestCommonPrefix(arrayOf("dog", "racecar", "car")))      // No common prefix
-        assertEquals("a", longestCommonPrefix(arrayOf("apple", "apricot", "ape")))   // Common prefix "a"
+        assertEquals("ap", longestCommonPrefix(arrayOf("apple", "apricot", "ape")))   // Common prefix "a"
         assertEquals(
             "inter",
             longestCommonPrefix(arrayOf("interview", "internet", "interval"))
